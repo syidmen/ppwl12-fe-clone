@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-sp-black:      #121212;
+  --color-sp-dark:       #181818;
+  --color-sp-elevated:   #242424;
+  --color-sp-hover:      #282828;
+  --color-sp-green:      #1ed760;
+  --color-sp-sub:        #b3b3b3;
+}
+
+@font-face {
+  font-family: 'SpotifyMix';
+  src: url('https://ext.same-assets.com/1151178647/1150299235.woff') format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'SpotifyMix';
+  src: url('https://ext.same-assets.com/1151178647/4186751551.woff') format('woff');
+  font-weight: 700;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body {
+  font-family: 'SpotifyMix', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { text-decoration: none; color: inherit; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.4); }
+
+/* ─────────── LAYOUT ─────────── */
+.sp-layout {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #121212;
+}
+
+/* sp-body: sits below fixed header, above bottom banner */
+.sp-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  margin-top: 64px;
+  margin-bottom: 72px;
+  gap: 8px;
+  padding: 8px;
+  background: #121212;
+}
+
+/* ─────────── SIDEBAR ─────────── */
+.sp-sidebar {
+  width: 280px;
+  min-width: 280px;
+  flex-shrink: 0;
+  overflow-y: auto;
+  background: #121212;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+@media (max-width: 767px) { .sp-sidebar { display: none; } }
+
+/* ─────────── MAIN CONTENT ─────────── */
+.sp-main {
+  flex: 1;
+  overflow-y: auto;
+  background: linear-gradient(180deg, #292929 0%, #121212 300px);
+  border-radius: 8px;
+}
+
+/* ─────────── CAROUSEL ─────────── */
+.sp-carousel-wrap { position: relative; }
+.sp-carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.sp-carousel::-webkit-scrollbar { display: none; }
+.sp-carousel-item {
+  flex: 0 0 auto;
+  width: 172px;
+  scroll-snap-align: start;
+}
+@media (max-width: 1200px) { .sp-carousel-item { width: 155px; } }
+@media (max-width: 900px)  { .sp-carousel-item { width: 140px; } }
+
+/* ─────────── CARD IMAGE WRAPPERS ─────────── */
+.img-sq {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background: #282828;
+}
+.img-ci {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+  border-radius: 9999px;
+  margin-bottom: 10px;
+  background: #282828;
+}
+.img-sq img, .img-ci img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100% !important;
+  object-fit: cover;
+}
+
+/* ─────────── PLAY BUTTON on card ─────────── */
+.play-btn {
+  position: absolute;
+  bottom: 8px; right: 8px;
+  width: 48px; height: 48px;
+  background: #1ed760;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.2s, transform 0.2s;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  z-index: 10;
+  border: none;
+  cursor: pointer;
+}
+.sp-card:hover .play-btn { opacity: 1; transform: translateY(0); }
+.play-btn:hover { transform: translateY(0) scale(1.06) !important; background: #1fdf64 !important; }
+
+/* ─────────── CARD ─────────── */
+.sp-card {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 14px;
+  transition: background 0.2s;
+  position: relative;
+}
+.sp-card:hover { background: #282828; }
