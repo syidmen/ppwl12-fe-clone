@@ -13,9 +13,9 @@ Main Web: [open.spotify.com](https://www.open.spotify.com/)
 
 |        Name                          |    NIM     | Reference Page | Specific Component |
 |--------------------------------------|------------|----------------|--------------------|
-| Muhammad Rasyid                      | H110124049 | [Page1-Main](https://open.spotify.com/) | `App.tsx`, `Navbar.tsx`, `ArtistCard.tsx` |
-| Syafira Aulianisa                    | H110124000 | [Page1-Main](https://open.spotify.com/) | `Header.tsx`, `musicData.ts`, `albumData.ts` |
-| Radika Trieza Aritonang              | H110124000 | [Page1-Main](https://open.spotify.com/) | `Footer.tsx`, `Sidebar.tsx` |
-| Atikoh                               | H110124000 | [Page1-Main](https://open.spotify.com/) | `MainContent.tsx`, `Section.tsx` |
-| Saskia Mecca Widyarni                | H110124000 | [Page1-Main](https://open.spotify.com/) | `PlaylistCard.tsx`, `SongCard.tsx` |
-| Syarifah Munibah Arifah Rajiyah      | H110124000 | [Page2-Album](https://open.spotify.com/Album) | `Album.tsx`, `Open.tsx`, `BottomBanner.tsx` |
+| Muhammad Rasyid                      | H110124049 | [Page1-Main](https://open.spotify.com/) | `App.tsx`, `Navbar.tsx`, `ArtistCard.tsx`, `ResizeableLayout.tsx` |
+| Syafira Aulianisa                    | H1101240025 | [Page1-Main](https://open.spotify.com/) | `Header.tsx`, `musicData.ts`, `albumData.ts` |
+| Radika Trieza Aritonang              | H110124024 | [Page1-Main](https://open.spotify.com/) | `Footer.tsx`, `Sidebar.tsx` |
+| Atikoh                               | H110124056 | [Page1-Main](https://open.spotify.com/) | `MainContent.tsx`, `Section.tsx` |
+| Saskia Mecca Widyarni                | H110124038 | [Page1-Main](https://open.spotify.com/) | `PlaylistCard.tsx`, `SongCard.tsx` |
+| Syarifah Munibah Arifah Rajiyah      | H110124027 | [Page2-Album](https://open.spotify.com/Album) | `Album.tsx`, `Open.tsx`, `BottomBanner.tsx` |
