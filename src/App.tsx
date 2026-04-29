@@ -8,8 +8,8 @@ function App() {
     <Router>
       <Navbar/>
       <Routes>
-        {/* <Route path="/" element={<Open />} />
-        <Route path="/album" element={<AlbumPage />} /> */}
+        <Route path="/" element={<Open />} />
+        <Route path="/album" element={<AlbumPage />} />
       </Routes>
     </Router>
   );

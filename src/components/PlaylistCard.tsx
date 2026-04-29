@@ -1,65 +1,18 @@
-import { useState } from "react";
+import { Play } from "lucide-react";
 
-interface PlaylistCardProps {
-  coverImage: string;
-  title: string;
-  description: string;
-  isPlaying?: boolean;
-  onPlay?: () => void;
-}
+interface Props { image: string; title: string; description: string; }
 
-export function PlaylistCard({
-  coverImage,
-  title,
-  description,
-}: PlaylistCardProps) {
-  const [isHovered, setIsHovered] = useState(false);
-
-  return (
-    <div
-      className="group relative w-[180px] cursor-pointer rounded-lg bg-[#181818] p-4 transition-all duration-300 hover:bg-[#282828]"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      {/* Playlist Cover */}
-      <div className="relative mb-4 aspect-square w-full overflow-hidden rounded-md shadow-[0_8px_24px_rgba(0,0,0,.5)]">
-        <img
-          src={coverImage}
-          alt={title}
-          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-        />
-
-        {/* Play Button */}
-        <button
-          type="button"
-          className={`absolute bottom-2 right-2 flex h-12 w-12 items-center justify-center rounded-full bg-[#1DB954] shadow-[0_8px_16px_rgba(0,0,0,.3)] transition-all duration-300 hover:scale-[1.06] hover:bg-[#1ed760] active:scale-100 ${
-            isHovered
-              ? "translate-y-0 opacity-100"
-              : "translate-y-3 opacity-0"
-          }`}
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            className="ml-1 h-6 w-6 text-black"
-          >
-            <path
-              d="M8 5.14v14l11-7-11-7z"
-              fill="currentColor"
-            />
-          </svg>
-        </button>
-      </div>
-
-      {/* Playlist Info */}
-      <div className="flex flex-col gap-1">
-        <h3 className="truncate text-[15px] font-bold leading-tight text-white">
-          {title}
-        </h3>
-        <p className="line-clamp-2 text-sm leading-snug text-[#a7a7a7]">
-          {description}
-        </p>
-      </div>
+const PlaylistCard = ({ image, title, description }: Props) => (
+  <div className="sp-card">
+    <div className="img-sq shadow-lg">
+      <img src={image} alt={title} loading="lazy" />
+      <button className="play-btn">
+        <Play style={{ width: '18px', height: '18px', fill: '#000', color: '#000', marginLeft: '2px' }} />
+      </button>
     </div>
-  );
-}
+    <h3 className="font-bold text-white truncate" style={{ fontSize: '14px', marginBottom: '2px' }}>{title}</h3>
+    <p className="line-clamp-2" style={{ fontSize: '13px', color: '#b3b3b3' }}>{description}</p>
+  </div>
+);
+
+export default PlaylistCard;
