@@ -4,7 +4,8 @@ const Header = () => (
 <header style={{
 position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50,
 display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-padding: '0 16px', height: '64px', background: '#000'
+padding: '0 16px', height: '64px', background: '#000',
+marginTop: '1rem'
 }}>
 
 {/* ── LEFT ── */}
