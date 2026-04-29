@@ -64,7 +64,7 @@ const ResizableLayout = ({ sidebar, main }: Props) => {
         onMouseLeave={e => (e.currentTarget.style.background = "transparent")}
       />
 
-      <div style={{ flex: 1, minWidth: 0, overflow: "hidden" }}>
+      <div style={{ flex: 1, minWidth: 0, minHeight: 0, height: '100%', overflow: 'auto' }}>
         {main}
       </div>
     </div>

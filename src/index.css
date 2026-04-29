@@ -58,6 +58,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   gap: 0px;
   padding: 8px;
   background: #121212;
+  min-height: 0;
 }
 
 /* ─────────── SIDEBAR ─────────── */
