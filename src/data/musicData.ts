@@ -56,3 +56,4 @@ export const popularRadio = [
     { id: 5, image: "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/7tYKF4w9nC0nq9CsPZTHyP/en", name: "SZA Radio" },
     { id: 6, image: "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/74KM79TiuVKeVCqs8QtB0B/en", name: "Sabrina Carpenter Radio" },
 ];
+

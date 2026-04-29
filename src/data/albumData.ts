@@ -12,3 +12,4 @@ export const albumData = {
         { number: 2, title: "You'll Be In My Heart", artist: "NIKI", duration: "4:02", explicit: false },
     ]
 };
+
