@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const navLinks = [
-    { name: 'Open', path: '/' },
+    { name: 'Main', path: '/' },
     { name: 'Album', path: '/Album' },
   ];
 
@@ -13,18 +13,19 @@ const Navbar = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 pointer-events-none">
+    <nav className="fixed top-0 left-0 w-full z-[100] pointer-events-none">
       <div className="pointer-events-auto bg-black/80 backdrop-blur-md px-4 py-2">
 
         <div className="flex items-center justify-center gap-6 mt-1">
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden md:flex gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.path}
-                className="text-white bg-gray-800 hover:text-blue-400 text-xs font-medium transition duration-300"
+                className="text-white hover:text-blue-400 text-xs font-medium transition duration-300"
+
               >
                 {link.name}
               </Link>
