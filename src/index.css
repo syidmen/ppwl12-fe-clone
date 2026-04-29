@@ -82,20 +82,27 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 /* ─────────── CAROUSEL ─────────── */
-.sp-carousel-wrap { position: relative; }
+.sp-carousel-wrap { 
+  position: relative;
+  margin-left: -32px;
+  margin-right: -32px;
+}
 .sp-carousel {
   display: flex;
-  gap: 0px; /* sebelumnya 16px */
+  gap: 8px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 8px;
+  padding-left: 32px;
+  padding-right: 32px;
+  scroll-padding-left: 32px;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 .sp-carousel::-webkit-scrollbar { display: none; }
 .sp-carousel-item {
   flex: 0 0 auto;
-  width: 200px; /* sebelumnya 172px */
+  width: 200px;
   scroll-snap-align: start;
 }
 @media (max-width: 1200px) { .sp-carousel-item { width: 180px; } }
@@ -156,4 +163,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transition: background 0.2s;
   position: relative;
 }
+.sp-carousel-item:first-child .sp-card { padding-left: 0; }
+.sp-carousel-item:last-child .sp-card { padding-right: 0; }
 .sp-card:hover { background: #282828; }
