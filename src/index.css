@@ -85,7 +85,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .sp-carousel-wrap { position: relative; }
 .sp-carousel {
   display: flex;
-  gap: 16px;
+  gap: 0px; /* sebelumnya 16px */
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 8px;
@@ -95,11 +95,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .sp-carousel::-webkit-scrollbar { display: none; }
 .sp-carousel-item {
   flex: 0 0 auto;
-  width: 172px;
+  width: 200px; /* sebelumnya 172px */
   scroll-snap-align: start;
 }
-@media (max-width: 1200px) { .sp-carousel-item { width: 155px; } }
-@media (max-width: 900px)  { .sp-carousel-item { width: 140px; } }
+@media (max-width: 1200px) { .sp-carousel-item { width: 180px; } }
+@media (max-width: 900px)  { .sp-carousel-item { width: 160px; } }
 
 /* ─────────── CARD IMAGE WRAPPERS ─────────── */
 .img-sq {

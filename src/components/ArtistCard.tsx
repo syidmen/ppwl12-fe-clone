@@ -10,8 +10,8 @@ const ArtistCard = ({ image, name }: Props) => (
         <Play style={{ width: '18px', height: '18px', fill: '#000', color: '#000', marginLeft: '2px' }} />
       </button>
     </div>
-    <h3 className="font-bold text-white truncate" style={{ fontSize: '14px', marginBottom: '2px' }}>{name}</h3>
-    <p style={{ fontSize: '13px', color: '#b3b3b3' }}>Artist</p>
+    <h3 className="text-white truncate" style={{ fontWeight:500, fontSize: '18px', marginBottom: '4px' }}>{name}</h3>
+    <p style={{ fontSize: '14px', color: '#b3b3b3' }}>Artist</p>
   </div>
 );
 
