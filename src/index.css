@@ -55,15 +55,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   overflow: hidden;
   margin-top: 64px;
   margin-bottom: 72px;
-  gap: 8px;
+  gap: 0px;
   padding: 8px;
   background: #121212;
 }
 
 /* ─────────── SIDEBAR ─────────── */
 .sp-sidebar {
-  width: 280px;
-  min-width: 280px;
+  width: 100%;
   flex-shrink: 0;
   overflow-y: auto;
   background: #121212;
