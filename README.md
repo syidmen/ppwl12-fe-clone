@@ -7,15 +7,15 @@ Kelas Praktikum Pemograman Web Lanjut 2026 (Sistem Informasi/UNTAN). Minggu ke-1
 > Lihat `instruction.md` untuk instruksi pengerjaan.
 > Gunakan file `README.md` ini sebagai laporan. Isi laporan berupa nama tim & page yang tiap anggota handle. 
 
-**Class A / Team 1**
+**Class B / Team 4**
 
-Main Web: [kokbisa.id](https://www.kokbisa.id/)
+Main Web: [open.spotify.com](https://www.open.spotify.com/)
 
-|        Name       |    NIM     | Reference Page | Spesific Component |
-|-------------------|------------|----------------|--------------------|
-| Leo Prangs Tobing | H110124000 | [Page1-Home](https://www.kokbisa.id/) | Navbar, Header Carousel |
-| Other             | H110124000 | [Page1-Home](https://www.kokbisa.id/) | Main |
-| Other             | H110124000 | [Page1-Home](https://www.kokbisa.id/) | Footer |
-| Other             | H110124000 | [Page2-Langganan](https://www.kokbisa.id/langganan) | Title Area |
-| Other             | H110124000 | [Page2-Langganan](https://www.kokbisa.id/langganan) | Form Area |
-| Other             | H110124000 | [Page2-Langganan](https://www.kokbisa.id/langganan) | Button Area |
+|        Name                          |    NIM     | Reference Page | Specific Component |
+|--------------------------------------|------------|----------------|--------------------|
+| Muhammad Rasyid                      | H110124049 | [Page1-Main](https://open.spotify.com/) | `App.tsx`, `Navbar.tsx`, `ArtistCard.tsx` |
+| Syafira Aulianisa                    | H110124000 | [Page1-Main](https://open.spotify.com/) | `Header.tsx`, `musicData.ts`, `albumData.ts` |
+| Radika Trieza Aritonang              | H110124000 | [Page1-Main](https://open.spotify.com/) | `Footer.tsx`, `Sidebar.tsx` |
+| Atikoh                               | H110124000 | [Page1-Main](https://open.spotify.com/) | `MainContent.tsx`, `Section.tsx` |
+| Saskia Mecca Widyarni                | H110124000 | [Page1-Main](https://open.spotify.com/) | `PlaylistCard.tsx`, `SongCard.tsx` |
+| Syarifah Munibah Arifah Rajiyah      | H110124000 | [Page2-Album](https://open.spotify.com/Album) | `Album.tsx`, `Open.tsx`, `BottomBanner.tsx` |
